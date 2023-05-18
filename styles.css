@@ -1,0 +1,256 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: dodgerblue;
+}
+/* Existing CSS styles */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hero section */
+#hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 390px;
+}
+.cta-button:hover {
+  background-color: dodgerblue;
+}
+
+/* About section */
+#about {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Features section */
+#features {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#features h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#features ul {
+  list-style: none;
+}
+
+#features ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+#contact {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: dodgerblue;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Existing CSS styles */
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollAnimation 1s infinite;
+  cursor: pointer;
+}
+
+.scroll-down span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+/* Existing CSS styles */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.category-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #000;
+  border-radius: 5px;
+
+}
+
+.category {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  background-image: url('background.png');
+}
+
+.category h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.category p {
+  font-size: 16px;
+  color: #000;
+  font-family: Verdana;
+}
+
+@media screen and (max-width: 600px) {
+  .category-box {
+    grid-template-columns: 1fr;
+  }
+}
